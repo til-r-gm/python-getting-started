@@ -5,13 +5,11 @@ from .models import Greeting
 
 # Create your views here.
 def index(request):
-    # return HttpResponse('Hello from Python!')
-    return render(request, "index.html")
+    print("hellooooo")
+    return HttpResponse('Hello from Python!')
 
 
 def db(request):
-
-    return HttpResponse('Hello from Python!')
     greeting = Greeting()
     greeting.save()
 
